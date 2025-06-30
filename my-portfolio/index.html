@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jyoti Prakash Sahoo | Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Jyoti Prakash Sahoo | MCA Student | Portfolio showcasing projects, skills, and resume.">
+  <meta name="author" content="Jyoti Prakash Sahoo">
+
+  <!-- Fonts & CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">PORTFOLIO</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" title="Toggle Theme">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Home -->
+    <section id="home" class="section">
+      <h1>Hi, I'm <span class="highlight">Jyoti Prakash Sahoo</span></h1>
+      <p><span id="typed"></span></p>
+      <a href="https://drive.google.com/uc?export=download&id=1C7bQsvZEaIQqDfGLkDomDli4mE2_UBMi" class="btn" download>📄 Download Resume</a>
+      <a href="https://drive.google.com/file/d/1C7bQsvZEaIQqDfGLkDomDli4mE2_UBMi/view" class="btn" target="_blank">👁️ View Resume</a>
+    </section>
+
+    <!-- Profile Popup Overlay -->
+    <div class="profile-popup" id="profilePopup">
+    <div class="popup-content">
+     <img src="images/profilepic.jpg" alt="Jyoti Profile" />
+     <span class="close-btn" onclick="togglePopup()">✖</span>
+    </div>
+    </div>
+
+    <!-- Add this button anywhere, e.g., in the About section -->
+    <section id="about" class="section" data-aos="fade-up">
+    <h2>About Me</h2>
+    <img src="images/profilepic.jpg" alt="Jyoti Profile" width="150" onclick="togglePopup()" class="clickable-profile" />
+    <p>I'm a passionate developer currently pursuing MCA and exploring Java, C, and web development.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section" data-aos="fade-up">
+      <h2>Skills</h2>
+      <ul>
+        <li>Java, C</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>MySQL</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section" data-aos="fade-up">
+      <h2>Education</h2>
+      <div class="education-container">
+        <div class="edu-card">
+          <h3>10th Standard</h3>
+          <p><strong>School:</strong> Vivekananda Shiksha Kendra</p>
+          <p><strong>Board:</strong> BSE Odisha</p>
+          <p><strong>Percentage:</strong> 75%</p>
+        </div>
+        <div class="edu-card">
+          <h3>12th Standard</h3>
+          <p><strong>College:</strong> Krypton Science H S School</p>
+          <p><strong>Board:</strong> CHSE Odisha</p>
+          <p><strong>Percentage:</strong> 77%</p>
+        </div>
+        <div class="edu-card">
+          <h3>Graduation (B.Sc Botany)</h3>
+          <p><strong>University:</strong> Raja Madhusudan Dev Degree College</p>
+          <p><strong>Percentage:</strong> 73%</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="project-card" data-aos="zoom-in">
+        <img src="images/bloodbank.png" alt="Blood Bank Management System" />
+        <h3>Blood Bank Management System</h3>
+        <p>Web-based platform to manage donors, hospitals & blood inventory.</p>
+        <span class="badge">MERN</span>
+        <a href="https://github.com/Jyotiprakash909/bloodbank" class="btn" target="_blank">GitHub</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:jyotiprakashsahoo440@gmail.com">jyotiprakashsahoo440@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/Jyotiprakash909" target="_blank">Jyotiprakash909</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jyotiprakash-sahoo-0943332b1" target="_blank">linkedin.com/in/jyotiprakash-sahoo-0943332b1</a></p>
+      <p>Phone: <a href="tel:+917735056809">+91 77350 56809</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Connect with me:</p>
+    <a href="mailto:jyotiprakashsahoo440@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/Jyotiprakash909" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/jyotiprakash-sahoo-0943332b1" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+    <a href="https://wa.me/917735056809" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+    <p>© 2025 Jyoti</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+</body>
+</html>
