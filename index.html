@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
 </head>
 
 <body>
@@ -22,12 +23,12 @@
     <nav class="navbar">
       <div class="logo">PORTFOLIO</div>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="badge">Home</a></li>
+        <li><a href="#about"class="badge">About</a></li>
+        <li><a href="#skills"class="badge">Skills</a></li>
+        <li><a href="#education"class="badge">Education</a></li>
+        <li><a href="#projects"class="badge">Projects</a></li>
+        <li><a href="#contact"class="badge">Contact</a></li>
       </ul>
       <button id="theme-toggle" title="Toggle Theme">🌙</button>
     </nav>
@@ -43,19 +44,16 @@
       <a href="https://drive.google.com/file/d/1C7bQsvZEaIQqDfGLkDomDli4mE2_UBMi/view" class="btn" target="_blank">👁️ View Resume</a>
     </section>
 
-    <!-- Profile Popup Overlay -->
+    <!-- Profile Popup -->
     <div class="profile-popup" id="profilePopup">
-    <div class="popup-content">
-     <img src="images/profilepic.jpg" alt="Jyoti Profile" />
-     <span class="close-btn" onclick="togglePopup()">✖</span>
-    </div>
+      <img src="images/profilepic.jpg" alt="Jyoti Profile" />
     </div>
 
-    <!-- Add this button anywhere, e.g., in the About section -->
+    <!-- About -->
     <section id="about" class="section" data-aos="fade-up">
-    <h2>About Me</h2>
-    <img src="images/profilepic.jpg" alt="Jyoti Profile" width="150" onclick="togglePopup()" class="clickable-profile" />
-    <p>I'm a passionate developer currently pursuing MCA and exploring Java, C, and web development.</p>
+      <h2>About Me</h2>
+      <img src="images/profilepic.jpg" alt="Jyoti Profile" width="300" onclick="togglePopup()" />
+      <p>I'm a passionate developer currently pursuing MCA and exploring Java, C, and web development.</p>
     </section>
 
     <!-- Skills -->
@@ -100,7 +98,14 @@
         <h3>Blood Bank Management System</h3>
         <p>Web-based platform to manage donors, hospitals & blood inventory.</p>
         <span class="badge">MERN</span>
-        <a href="https://github.com/Jyotiprakash909/bloodbank" class="btn" target="_blank">GitHub</a>
+        <a href="https://github.com/Jyotiprakash909/Blood-Bank-App" class="btn" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card" data-aos="zoom-in">
+        <img src="images/logo.png" alt="Personal Portfolio Website" />
+        <h3>Personal Portfolio Website</h3>
+        <p>A responsive personal website to showcase my resume, skills, education, projects, and contact details. Built using HTML, CSS, and JavaScript with modern animations and dark/light mode.</p>
+        <span class="badge">HTML/CSS/JS</span>
+        <a href="https://github.com/Jyotiprakash909/Portfolio" class="btn" target="_blank">GitHub</a>
       </div>
     </section>
 
@@ -119,8 +124,8 @@
     <p>Connect with me:</p>
     <a href="mailto:jyotiprakashsahoo440@gmail.com"><i class="fas fa-envelope"></i></a>
     <a href="https://github.com/Jyotiprakash909" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/jyotiprakash-sahoo-0943332b1" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-    <a href="https://wa.me/917735056809" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+    <a href="https://www.linkedin.com/in/jyotiprakash-sahoo-0943332b1" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://wa.me/917735056809" target="_blank"><i class="fab fa-whatsapp"></i></a>
     <p>© 2025 Jyoti</p>
   </footer>
 
